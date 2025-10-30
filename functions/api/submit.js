@@ -11,8 +11,16 @@ export async function onRequestPost({ request, env }) {
     }
 
     const ts = createdAt || new Date().toISOString();
+    // Support both binding names: Pages UI set to "toss-nam" (with hyphen) or local wrangler LANDING_DB
+    const DB = env['toss-nam'] || env.LANDING_DB;
+    if (!DB) {
+      return new Response(JSON.stringify({ ok: false, error: 'db_binding_not_found' }), {
+        status: 500,
+        headers: { 'Content-Type': 'application/json' },
+      });
+    }
 
-    await env.LANDING_DB
+    await DB
       .prepare(
         'INSERT INTO leads (industry, purpose, name, phone, created_at) VALUES (?, ?, ?, ?, ?)'
       )
