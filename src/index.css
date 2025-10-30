@@ -40,19 +40,19 @@ html, body {
 }
 
 .primary-btn {
-  @apply w-full h-12 rounded-2xl bg-brand-600 text-white font-semibold active:opacity-90 disabled:opacity-40 disabled:cursor-not-allowed shadow-[0_6px_14px_rgba(47,131,243,0.25)];
+  @apply w-full h-12 rounded-2xl bg-brand-600 text-white font-semibold text-[15px] active:opacity-90 disabled:opacity-40 disabled:cursor-not-allowed shadow-[0_6px_14px_rgba(47,131,243,0.25)];
 }
 
 .secondary-btn {
-  @apply w-full h-12 rounded-2xl bg-gray-100 text-gray-900 font-semibold active:opacity-90;
+  @apply w-full h-12 rounded-2xl bg-gray-100 text-gray-900 font-semibold text-[15px] active:opacity-90;
 }
 
 .title {
-  @apply text-[22px] font-semibold leading-snug text-gray-900 tracking-tight;
+  @apply text-[24px] font-semibold leading-snug text-gray-900 tracking-tight;
 }
 
 .subtitle {
-  @apply mt-2 text-gray-500 text-[13px];
+  @apply mt-2 text-gray-500 text-[14px];
 }
 
 
