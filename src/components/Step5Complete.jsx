@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Step5Complete({ onReset }) {
   const openHomepage = () => {
-    const url = 'https://example.com' // Placeholder
+    const url = 'https://kmong.com/gig/698784'
     try {
       window.location.href = url
     } catch (_) {
