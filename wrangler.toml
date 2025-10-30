@@ -1,0 +1,10 @@
+name = "toss-landing"
+compatibility_date = "2024-11-01"
+
+# Cloudflare Pages Functions + D1 binding
+[[d1_databases]]
+binding = "LANDING_DB"
+database_name = "toss-nam"
+database_id = "19bbb824-5b4e-44e7-8cbd-32ca2e8b741e"
+
+
