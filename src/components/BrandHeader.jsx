@@ -3,8 +3,12 @@ import React from 'react'
 export default function BrandHeader() {
   return (
     <div className="flex items-center gap-2 select-none">
-      <div className="w-6 h-6 rounded-full bg-brand-600 shadow-sm" />
-      <div className="text-[15px] font-semibold tracking-tight text-gray-900">브랜디업</div>
+      <div className="h-6 flex items-center">
+        {/* Light mode logo */}
+        <img src="/logo.png" alt="브랜디업" className="h-6 block dark:hidden" />
+        {/* Dark mode logo */}
+        <img src="/logo_dark.png" alt="브랜디업" className="h-6 hidden dark:block" />
+      </div>
     </div>
   )
 }
