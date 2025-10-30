@@ -5,9 +5,9 @@ export default function BrandHeader() {
     <div className="flex items-center gap-2 select-none">
       <div className="h-6 flex items-center">
         {/* Light mode logo */}
-        <img src="/logo.png" alt="브랜디업" className="h-6 block dark:hidden" />
+        <img src="/images/logo.png" alt="브랜디업" className="h-6 block dark:hidden" />
         {/* Dark mode logo */}
-        <img src="/logo_dark.png" alt="브랜디업" className="h-6 hidden dark:block" />
+        <img src="/images/logo_dark.png" alt="브랜디업" className="h-6 hidden dark:block" />
       </div>
     </div>
   )
